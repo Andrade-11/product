@@ -12,13 +12,16 @@
     "test:ci": "vitest --silent --run",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui --api 9527",
-    "test:dev": "vitest -w --logHeapUsage --inspect"
+    "test:dev": "vitest -w --logHeapUsage --inspect",
+    "prepare": "is-ci || husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
@@ -32,6 +35,9 @@
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.3",
     "typescript": "^4.9.4",
     "unplugin-auto-import": "^0.12.2",
