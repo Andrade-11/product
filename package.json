@@ -8,7 +8,11 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint:fix": "eslint src --ext js,jsx,ts,tsx --fix",
-    "lint": "eslint src --ext js,jsx,ts,tsx"
+    "lint": "eslint src --ext js,jsx,ts,tsx",
+    "test:ci": "vitest --silent --run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui --api 9527",
+    "test:dev": "vitest -w --logHeapUsage --inspect"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -20,6 +24,8 @@
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "@vitejs/plugin-react": "^3.0.1",
+    "@vitest/coverage-c8": "^0.28.2",
+    "@vitest/ui": "^0.28.2",
     "eslint": "^8.32.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.6.0",
@@ -28,6 +34,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.8.3",
     "typescript": "^4.9.4",
-    "vite": "^4.0.4"
+    "unplugin-auto-import": "^0.12.2",
+    "vite": "^4.0.4",
+    "vitest": "^0.28.2"
   }
 }

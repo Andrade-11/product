@@ -11,6 +11,7 @@
     "noUncheckedIndexedAccess": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
+    "types": ["vitest/globals"],
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
